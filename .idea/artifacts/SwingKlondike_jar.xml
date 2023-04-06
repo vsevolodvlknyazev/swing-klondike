@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SwingKlondike:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SwingKlondike_jar</output-path>
+    <root id="archive" name="SwingKlondike.jar">
+      <element id="module-output" name="SwingKlondike" />
+    </root>
+  </artifact>
+</component>
