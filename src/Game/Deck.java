@@ -3,10 +3,10 @@ package Game;
 import Card.Card;
 
 import java.util.Collections;
-import java.util.Stack;
+import java.util.LinkedList;
 
 public class Deck {
-    private final Stack<Card> cards = new Stack<>();
+    private final LinkedList<Card> cards = new LinkedList<>();
 
     public Deck() {
         Card.Suit suit = null;
@@ -36,7 +36,7 @@ public class Deck {
         return cards.pop();
     }
 
-    public Stack<Card> getCards() {
+    public LinkedList<Card> getCards() {
         return cards;
     }
 }

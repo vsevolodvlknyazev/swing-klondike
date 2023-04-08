@@ -6,10 +6,11 @@ import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Collections;
-import java.util.Stack;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Stock {
-    private final Stack<Card> stockPile = new Stack<>();
+    private final LinkedList<Card> stockPile = new LinkedList<>();
     private final StraightPile wastePile = new StraightPile() {
         @Override
         public boolean merge(Pile pile) {
@@ -30,7 +31,7 @@ public class Stock {
         return stockPileButton;
     }
 
-    public Stock(Stack<Card> cards) {
+    public Stock(List<Card> cards) {
         stockPile.addAll(cards);
         stockPileButtonConfigure();
     }
